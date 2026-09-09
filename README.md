@@ -1,6 +1,6 @@
 # formul-rio-bootstrap 
 ## Objetivo
-[Criar um formulário para expandir o conhecimento sobre HTML, CSS e Bootstrap]
+Criar um formulário para expandir o conhecimento sobre HTML, CSS e Bootstrap
 
 ## Tecnologias utilizadas
 [HTML, Bootstrap, JavaScript, GitHub Pages]
