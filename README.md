@@ -29,6 +29,9 @@ HTML, Bootstrap, JavaScript, GitHub Pages
 - button → botão genérico (com ação via JS: "Preciso de ajuda")
 - image → botão de envio usando uma imagem
 
+## Investigação
+Durante o desenvolvimento, tive dificuldades para publicar o projeto no GitHub pages, pois os arquivos das pastas css, js e img não estavam sendo reconhecidos. Pelo index.html, dando erro 404, descobri que isso acontecia porque as pastas não haviam sido criadas corretamente no repositório. Resolvi criando as pastas diretamente pelo GitHub e subindo cada arquivo dentro delas.
+
 ## Link do repositório: 
 https://github.com/leticiafavero05/formul-rio-bootstrap
 
