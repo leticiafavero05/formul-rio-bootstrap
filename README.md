@@ -6,8 +6,8 @@ Criar um formulário para expandir o conhecimento sobre HTML, CSS e Bootstrap
 HTML, Bootstrap, JavaScript, GitHub Pages
 
 ## inputs utilizados
-text → texto livre (nome, título do projeto)
-email → valida automaticamente o formato de e-mail
+- text → texto livre (nome, título do projeto)
+- email → valida automaticamente o formato de e-mail
 password → esconde o texto digitado (com aviso de não usar senha real)
 number → aceita só números, com valor mínimo e máximo (idade)
 tel → telefone, com formato validado por pattern
