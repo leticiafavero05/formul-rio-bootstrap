@@ -1,13 +1,15 @@
 # formul-rio-bootstrap 
 ## Objetivo
-Criar um formulário para expandir o conhecimento sobre HTML, CSS e Bootstrap
+[Criar um formulário para expandir o conhecimento sobre HTML, CSS e Bootstrap]
 
-##Tecnologias utilizadas
-HTML, Bootstrap, JavaScript, GitHub Pages
+## Tecnologias utilizadas
+[HTML, Bootstrap, JavaScript, GitHub Pages]
 
-##Link do repositório: 
+## Link do repositório: 
+[https://github.com/leticiafavero05/formul-rio-bootstrap]
 
-##Link do site: 
+## Link do pages:
+[https://leticiafavero05.github.io/formul-rio-bootstrap/]
 
-##Autor
-Leticia Favero Alonso Esteves
+## Autor
+[Leticia Favero Alonso Esteves]
