@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição - Mostra de Tecnologia e Inovação</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container my-4">
+<!--Identificacao do participamte
+  dados de contato
+  formacao e experiencia
+  datas e disponibilidade
+  preferencias
+  informacoes sobre o projeto
+  botoes de acao
+  O formulario nao precisa salvar dados em banco de dados. 
+  Ele sera apenas uma pagina demonstrativa.-->
+  <h1 class="mb-4">Inscrição - Mostra de Tecnologia e Inovação</h1>
+<!--FORM INICIAL-->
+  <form>
+<!--sessões devem estar aqui :P-->
+    <div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Identificação do participante</legend>
+      <div class="row g-3">
+
+        <div class="col-12 col-md-6">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" name="nome" minlength="3" maxlength="100" required>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="idade" class="form-label">Idade</label>
+          <input type="number" class="form-control" id="idade" name="idade" min="14" max="100" step="1" required>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="foto" class="form-label">Foto (opcional)</label>
+          <input type="file" class="form-control" id="foto" name="foto" accept=".jpg,.jpeg,.png">
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="corFavorita" class="form-label">Cor favorita</label>
+          <input type="color" class="form-control form-control-color" id="corFavorita" name="corFavorita" value="#0d6efd">
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Dados de contato</legend>
+      <div class="row g-3">
+
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="telefone" class="form-label">Telefone (com DDD)</label>
+          <input type="tel" class="form-control" id="telefone" name="telefone"
+                 pattern="\(\d{2}\) \d{4,5}-\d{4}"
+                 placeholder="(11) 91234-5678" required>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="site" class="form-label">Site ou portfólio (opcional)</label>
+          <input type="url" class="form-control" id="site" name="site" placeholder="https://seusite.com">
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="senha" class="form-label">Crie uma senha de acesso</label>
+          <input type="password" class="form-control" id="senha" name="senha" minlength="6" required>
+          <div class="form-text text-danger">Não use uma senha real. Isso é apenas uma demonstração.</div>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Formação e experiência</legend>
+      <div class="row g-3">
+
+        <div class="col-12 col-md-6">
+          <label for="escolaridade" class="form-label">Escolaridade</label>
+          <select class="form-select" id="escolaridade" name="escolaridade" required>
+            <option value="" selected disabled>Selecione...</option>
+            <option value="ensino-medio">Ensino Médio</option>
+            <option value="tecnico">Técnico</option>
+            <option value="graduando">Graduando</option>
+            <option value="graduado">Graduado</option>
+            <option value="pos-graduado">Pós-graduado</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="area" class="form-label">Área de interesse</label>
+          <input type="text" class="form-control" id="area" name="area" list="areasList" placeholder="Digite ou escolha uma opção">
+          <datalist id="areasList">
+            <option value="Desenvolvimento de Software">
+            <option value="Inteligência Artificial">
+            <option value="Redes e Infraestrutura">
+            <option value="Design e UX">
+            <option value="Segurança da Informação">
+          </datalist>
+        </div>
+
+        <div class="col-12">
+          <label for="experiencia" class="form-label">Conte um pouco da sua experiência</label>
+          <textarea class="form-control" id="experiencia" name="experiencia" rows="4" maxlength="500" placeholder="Descreva projetos, cursos ou experiências relevantes..."></textarea>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Datas e disponibilidade</legend>
+      <div class="row g-3">
+
+        <div class="col-12 col-md-6">
+          <label for="nascimento" class="form-label">Data de nascimento</label>
+          <input type="date" class="form-control" id="nascimento" name="nascimento" required>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="mesInicio" class="form-label">Mês de início disponível</label>
+          <input type="month" class="form-control" id="mesInicio" name="mesInicio">
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="semana" class="form-label">Semana preferida para a mostra</label>
+          <input type="week" class="form-control" id="semana" name="semana">
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label for="horario" class="form-label">Horário preferido</label>
+          <input type="time" class="form-control" id="horario" name="horario">
+        </div>
+
+        <div class="col-12">
+          <label for="confirmacao" class="form-label">Data e hora que você confirma disponibilidade</label>
+          <input type="datetime-local" class="form-control" id="confirmacao" name="confirmacao">
+        </div>
+        
+
+      </div>
+    </fieldset>
+  </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Preferências</legend>
+      <div class="row g-3">
+
+        <div class="col-12">
+          <label for="interesse" class="form-label">Nível de interesse na mostra (0 a 10)</label>
+          <input type="range" class="form-range" id="interesse" name="interesse" min="0" max="10" step="1" value="5">
+        </div>
+
+        <div class="col-12">
+          <label class="form-label d-block">Temas de interesse (marque quantos quiser)</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="temaIA" name="temas" value="ia">
+            <label class="form-check-label" for="temaIA">Inteligência Artificial</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="temaWeb" name="temas" value="web">
+            <label class="form-check-label" for="temaWeb">Desenvolvimento Web</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="temaRedes" name="temas" value="redes">
+            <label class="form-check-label" for="temaRedes">Redes</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="temaJogos" name="temas" value="jogos">
+            <label class="form-check-label" for="temaJogos">Desenvolvimento de Jogos</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label d-block">Como você prefere participar? *</label>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="presencial" name="participacao" value="presencial" required>
+            <label class="form-check-label" for="presencial">Presencial</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="online" name="participacao" value="online" required>
+            <label class="form-check-label" for="online">Online</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="hibrido" name="participacao" value="hibrido" required>
+            <label class="form-check-label" for="hibrido">Híbrido</label>
+          </div>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Informações sobre o projeto</legend>
+      <div class="row g-3">
+
+        <div class="col-12">
+          <label for="tituloProjeto" class="form-label">Título do projeto (se houver)</label>
+          <input type="text" class="form-control" id="tituloProjeto" name="tituloProjeto" maxlength="80" placeholder="Nome do seu projeto">
+        </div>
+
+        <div class="col-12">
+          <label for="descricaoProjeto" class="form-label">Descrição do projeto</label>
+          <textarea class="form-control" id="descricaoProjeto" name="descricaoProjeto" rows="4" maxlength="600" placeholder="Explique brevemente do que se trata o projeto..."></textarea>
+        </div>
+
+        <div class="col-12">
+          <label for="buscaTermo" class="form-label">Buscar categoria (opcional)</label>
+          <input type="search" class="form-control" id="buscaTermo" name="buscaTermo" placeholder="Digite para buscar uma categoria...">
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+    <fieldset>
+      <legend>Botões de ação</legend>
+
+      <input type="hidden" id="origem" name="origem" value="site-inscricao">
+
+      <div class="d-flex flex-wrap gap-2">
+        <button type="submit" class="btn btn-primary">Enviar inscrição</button>
+        <button type="reset" class="btn btn-secondary">Limpar formulário</button>
+        <button type="button" class="btn btn-outline-dark" id="btnAjuda">Preciso de ajuda</button>
+      </div>
+
+      <div class="mt-3">
+        <label class="form-label d-block"> </label>
+        <input type="image" src="img/jake.jpeg" alt="Enviar inscrição" width="120">
+      </div>
+
+    </fieldset>
+  </div>
+</div>
+
+
+
+</div>
+
+
+  </form>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
