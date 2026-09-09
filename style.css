@@ -1,0 +1,72 @@
+body {
+  background-color: #f6f3fb;
+}
+
+h1 {
+  color: #6b4ba1;
+  font-weight: 600;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6b4ba1;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #b8e0c8;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.card {
+  border: none;
+  border-left: 5px solid #d9c6f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-text {
+  font-size: 0.85rem;
+  color: #a68b3c;
+}
+
+.btn-primary {
+  background-color: #8e6bc4;
+  border-color: #8e6bc4;
+}
+
+.btn-primary:hover {
+  background-color: #7a56b0;
+  border-color: #7a56b0;
+}
+
+.btn-secondary {
+  background-color: #f4d35e;
+  border-color: #f4d35e;
+  color: #4a3b00;
+}
+
+.btn-secondary:hover {
+  background-color: #e6c34f;
+  border-color: #e6c34f;
+  color: #4a3b00;
+}
+
+.btn-outline-dark {
+  border-color: #7bbf8e;
+  color: #4a7a5a;
+}
+
+.btn-outline-dark:hover {
+  background-color: #7bbf8e;
+  border-color: #7bbf8e;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
